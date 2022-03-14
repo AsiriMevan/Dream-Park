@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Attraction</title>
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+		}
+		
+		.slideshow
+		{  
+			width: 1000px;
+			height: 600px;
+			overflow: visible;
+		}
+		
+		.middle
+		{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-70%, -50%);
+		}
+		
+		.navigation-slides
+		{
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50);
+			display: flex;
+		}
+		
+		.bar
+		{
+			width: 50px;
+			height: 10px;
+			border: 2px solid #FFFFFF;
+			margin: 6px;
+			cursor: pointer;
+			transition: 0.4s;
+		}
+		
+		.bar:hover
+		{
+			background: coral;
+		}
+		
+		input[name="r"]
+		{
+			position: absolute;
+			visibility: hidden;
+		}
+		
+		.slides
+		{
+			width: 500%;
+			height: 100%;
+			display: flex;
+		}
+		
+		.slide
+		{
+			width: 20%;
+			transition: 0.06s;
+		}
+		
+		.slide img
+		{
+			width: 100%;
+			height: 100%;
+		}
+		
+		#r1:checked ~ .s1
+		{
+			margin-left: 0;
+		}
+		
+		#r2:checked ~ .s1
+		{
+			margin-left: -20%;
+		}
+		
+		#r3:checked ~ .s1
+		{
+			margin-left: -40%;
+		}
+		
+		#r4:checked ~ .s1
+		{
+			margin-left: -60%;
+		}
+		
+		#r5:checked ~ .s1
+		{
+			margin-left: -80%;
+		} 
+		
+		.content 
+		{
+    		position: fixed;
+    		bottom: 0;
+    		background: rgba(0, 0, 0, 0.7);
+    		color: ;
+    		width: 100%;
+    		height: 100%;
+			overflow-y: scroll;
+			overflow-x: hidden;
+		}
+		
+		.h1
+		{
+			padding: 10px;
+		}
+		
+		.nav
+		{
+			background: rgba(0, 0, 0, 0.5);
+			height: 100px;
+		}
+		
+		.menu
+		{
+			float: inherit;
+			list-style: none;
+			margin: 20px;
+			padding: 25px;
+		}
+		
+		.menu li
+		{
+			display: inline-block;
+			margin: 15px 20px;
+		}
+		
+		.menu li a
+		{
+			text-decoration: none;
+			color: white;
+			padding: 8px 4px;
+			font-family:"Times New Roman";
+			font-size: 28px;
+			letter-spacing: 2px;
+			border-bottom: 1px solid #FFFFFF
+		}
+		
+		.menu li a:hover
+		{
+			background: rgba (220,172,94,1.00);
+			border-bottom: 2px solid;
+			transition: .4s;
+		}
+		
+		.vdo
+		{
+			padding-top: 0.5px;
+		}
+		
+		.btn
+		{
+			font-size: 18px;
+			color: #fff;
+			letter-spacing: 2px;
+			margin: 5px;
+			padding: 7px 28px;
+			border: 1px solid coral;
+			border-radius: 25px;
+			padding-bottom: 1px;
+		}
+		
+		.btn1
+		{
+			background: coral;
+			color: #fff;
+		}
+		
+		.h2
+		{
+			padding-top: 650px;
+		}
+	</style>
+</head>
+
+<body>
+	
+	<video autoplay muted loop id="bgvideo" width="100%" height="100%">
+		<source src="../Videos/FWAD-website-video.mp4" type="video/mp4">
+	</video>
+	
+	<div class="content">
+	
+		<h1 align="center" class="h1"><font color="#FFFFFF" face="Trajan Pro" size="+15">Attraction</font></h1>
+		<center><p><font color="#FFFFFF" size="+3">The nice thing about the gallery shows is that without having to pay any money you can just go and see it.</font></p></center>
+		
+	<div class="slideshow middle">
+		
+		<div class="slides">
+			
+			<input type="radio" name="r" id="r1" checked>
+			<input type="radio" name="r" id="r2" >
+			<input type="radio" name="r" id="r3" >
+			<input type="radio" name="r" id="r4" >
+			<input type="radio" name="r" id="r5" >
+			
+			<div class="slide s1">
+				<img src="../Images/1.jpg" alt="">
+			</div>
+			
+			<div class="slide">
+				<img src="../Images/2.jpg" alt="">
+			</div>
+			
+			<div class="slide">
+				<img src="../Images/3.jpg" alt="">
+			</div>
+			
+			<div class="slide">
+				<img src="../Images/4.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="../Images/5.jpg" alt="">
+			</div>
+			
+		</div>
+		
+		<div class="navigation-slides">
+				<label for="r1" class="bar"></label>
+				<label for="r2" class="bar"></label>
+				<label for="r3" class="bar"></label>
+				<label for="r4" class="bar"></label>
+				<label for="r5" class="bar"></label>
+		</div>
+	</div>
+		
+		<center><h2 class="h2"><font color="#FFFFFF" size="+4">Arcade</font></h2></center>
+		
+		<div class="vdo">
+			
+		  <center><video controls="controls" width="500" height="300">
+           <source src="../Videos/Dangerous Loop Water Slide at Adaland.mp4" type="video/mp4" allowfullscreen />
+           </video> &nbsp; 
+			
+		   <video controls="controls" width="500" height="300">
+           <source src="../Videos/Eid_Kids_Activities_online.mp4" type="video/mp4" allowfullscreen />
+           </video> &nbsp;  
+			
+		   <video controls="controls" width="500" height="300">
+           <source src="../Videos/Pexels Videos 1781914.mp4" type="video/mp4" allowfullscreen />
+           </video> &nbsp; 
+		   
+		   <video controls="controls" width="500" height="300">
+           <source src="../Videos/WBW_30s_eng_FullHD-14mb.mp4" type="video/mp4" allowfullscreen />
+           </video> &nbsp;
+			  
+		   <video controls="controls" width="500" height="300">
+           <source src="../Videos/Wild Wild Wet Waterpark in Singapore (Raggae Music Clip!).mp4" type="video/mp4" allowfullscreen />
+           </video> &nbsp;	  
+			 
+		   <video controls="controls" width="500" height="300">
+           <source src="../Videos/YITP_en.mp4" type="video/mp4" allowfullscreen />
+           </video> &nbsp;
+			  
+			  <br />
+			  <br />
+			  
+			  <a href="https://www.google.com/search?q=warner+bros+world+abu+dhabi&source=lnms&tbm=isch&sa=X&ved=0ahUKEwixxYaF8YLkAhVKr48KHZGHCaoQ_AUIESgB&biw=1920&bih=937" class="btn btn1">Click Me</a>
+			  <br />
+			<p><font color="#FFFFFF" size="4">For More...!</font></p>
+			  
+			  <br/>
+			  
+			  
+		<center><div class="nav">
+			<ul class="menu">
+				<li><a href="../../Dream Park.html">Home</a></li>
+				<li><a href="About Us.html">About Us</a></li>
+				<!--<li><a href="Details/Linked Tabs/Attraction.html">Attraction</a></li>-->
+				<li><a href="Contact Us.html">Contact Us</a></li>
+				<li><a href="Packages.html">Packages</a></li>
+				<li><a href="Book Now.html">Book Now</a></li> 
+				<li><a href="Inquiries.html">Inquiries</a></li>
+			</ul>
+		</div></center>
+			  
+		  </center>
+		</div>
+	
+	</div>
+</body>
+</html>
